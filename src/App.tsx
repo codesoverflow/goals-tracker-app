@@ -34,6 +34,23 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBI-wN5tnuE5StK2_5xf1ci_VTk3CVwy9Y",
+  authDomain: "goals-tracker-app.firebaseapp.com",
+  projectId: "goals-tracker-app",
+  storageBucket: "goals-tracker-app.appspot.com",
+  messagingSenderId: "444466207637",
+  appId: "1:444466207637:web:f4693bde948eff69f0749c",
+  measurementId: "G-GZP7T9CD5K"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
 setupIonicReact();
 
 const App: React.FC = () => (
