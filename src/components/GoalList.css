@@ -22,3 +22,8 @@
 .container a {
   text-decoration: none;
 }
+
+.addGoalIcon {
+  display: flex;
+  justify-content: center;
+}
